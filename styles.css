@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+font-family: "Roboto Condensed", sans-serif;
+margin: 0px;
+box-sizing: border-box;
+}
+.root{
+    --primarycolor:rgb(255, 191, 95);
+    --secondarycolor: rgb(49, 47, 47);
+
+}
+.container{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    height: 600px;
+}
+
+.section{
+    width: 700px;   
+}
+
+.third{
+    width: 1000px;
+}
+
+.topimg{
+    height: 430px;
+    width: 250px;
+    margin-top: 100px;
+    float: left;
+    margin-left: 50px;
+    
+}
+
+.info{
+    float: right;
+    margin: 280px 20px 0px 0px;
+    height: 50px;
+}
+
+.info h1{
+    font-size: 45px;
+}
+.info .subtitle{
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.circle{
+    background-color:rgb(144, 184, 247);
+   height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    margin-top: 220px;
+    position: absolute;
+    z-index: -1;
+    
+
+}
+
+.about-container {
+    background-color: #eee0c3;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+      align-items: center;
+      
+  }
+  .section two{
+    width: 60%;
+     height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;   
+    
+  }
+  
+  .about h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .about p {
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .about h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .image {
+    width: 30%; 
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+  margin-top: 5px;
+  }
+  
+  .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    
+  }
+  
+  .about {
+    width: 70%; 
+    padding: 20px;
+    margin-left: 150px;
+    
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  tr:nth-child(even) {
+    background-color: #b7b5cf; 
+  }
+  
+  tr:nth-child(odd) {
+    background-color: #d3cff9; 
+  }
+  
+  th, td {
+    border: 5px solid #3f42fe;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #4200f9;
+  }
+
+
+
+.skills-container{
+    height: 300px;
+    background-color: rgb(58, 216, 255);
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.skills{
+    width: 70%;
+    margin-left: 15%;
+    
+}
+
+.skills .box{
+    float: left;
+    width: 16%;
+    background-color: rgba(131, 116, 177, 0.917);
+    height: 45px;
+    border-radius: 3rem;
+   margin: 80px 2px 0px 2px;
+   
+}
+.skills .box p{
+    padding-top: 10px;
+
+}
+.skills .box:before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    bottom: 0;
+    height: 45px;
+    border-radius: 4rem;
+    left: 100%;
+    background-color: rgb(2, 6, 255);
+    transition-property: left;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+.skills .one:hover:before{
+    left: 5%;
+}
+.skills  .two:hover:before{
+    left: 10%;
+}
+.skills  .three:hover:before{
+    left: 10%;
+}
+.skills  .four:hover:before{
+    left: 15%;
+}
+.skills  .five:hover:before{
+    left: 2%;
+}
+.skills  .six:hover:before{
+    left: 12%;
+}
+
+.portfolio{
+    padding: 0px;
+    text-align: center;
+    width: 100%;
+    height: 450px;
+}
+
+.portfolio h1{
+    color: var(--secondarycolor);
+    padding-top: 15px;
+}
+
+.portfolio .block{
+    
+    margin: 5px;
+    float: left;
+    height: 300px;
+    color: white;
+    background-color: var(--secondarycolor);
+}
+
+.portfolio .block .box{
+    width: 100%; 
+    height: auto; 
+    overflow: hidden;
+    cursor: pointer;
+}
+.portfolio .block .img{
+    text-align: center;
+    justify-content: center;
+    width: 400px;
+    height: auto;
+    object-fit: contain;
+    
+}
+
+.topimage{
+    height: 250px;
+    width: 290px;
+    margin-top: 10px;
+    float: left;
+    margin-left: 190px;
+}
+
+.centerimage{
+    height: 250px;
+    width: 290px;
+    margin-top: 10px; 
+    margin-right: 170px;
+    float: right;
+}
+
+.resume{
+    height: 350px;
+    width: 290px;
+    margin-top: 10px;
+    margin-left: 350px;
+  
+}
+
+.job-experience {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .job-box {
+    background-color: #f7f7f7;
+    padding: 20px;
+    margin: 20px;
+    width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .job-box:nth-child(1) {
+    background-color: #ffc3e1; 
+
+  }
+  .job-box:nth-child(1) p{
+    text-align: left;
+  }
+  
+  .job-box:nth-child(2) {
+    background-color: #ffc18b; 
+  }
+  .job-box:nth-child(2) p{
+    text-align: left;
+  }
+  
+  .job-box:nth-child(3) {
+    background-color: #b6efef; 
+  }
+  .job-box:nth-child(3) p{
+    text-align: left;
+  }
+  
+  .job-box:nth-child(4) {
+    background-color: #fddc7c; 
+  }
+  .job-box:nth-child(4) p{
+    text-align: left;
+  }
+  
+  .job-box:nth-child(5) {
+    background-color: #8BC34A; /* yellow-green */
+  }
+  .job-box:nth-child(5) p{
+    text-align: left;
+  }
+  
+  .job-box h2 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .job-box h3 {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .job-box p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+.last{
+  background-color: rgb(81, 76, 76);
+  height: 500px;
+  margin-top: 580px;
+}
+  .contact{
+    padding: 30px 100px;
+    text-align: center;
+    height: 500px;
+    float: left;
+    color: white;
+  }
+  .contact h1, p{
+    text-align: center;
+  }
+  
+  input[type=text], textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid white;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    background-color: transparent;
+    color: white;
+  }
+
+  input[type=submit]{
+    text-align: center;
+    padding: 12px 20px;
+    border: 1px solid white;
+    border-radius: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+   color: white;
+    background-color: transparent;
+  }
+.contact i{
+  margin: 10px;
+  cursor: pointer;
+  font-size: 36px;
+}
+  
